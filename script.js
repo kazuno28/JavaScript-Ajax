@@ -1,5 +1,5 @@
 // 取得したAPI
-const API_KEY = "f8c2869feba6943b7b27273d4c8ec451";
+const API_KEY = "取得したAPIを入力（プライバシー保護のため）";
 
 $(function(){
   $('#btn').on('click', function() {
