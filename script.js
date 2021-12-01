@@ -8,7 +8,7 @@ $(function(){
       url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + API_KEY,
       dataType : 'jsonp',
     }).done(function (data){
-      //通信成功
+      //通信成功の場合
       // 位置
       $('#place').text(data.name);
       // 最高気温
@@ -24,7 +24,7 @@ $(function(){
       // 天気アイコン
       $('img').attr("src","http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
       $('img').attr("alt",data.weather[0].main);    }).fail(function (data) {
-      //通信失敗
+      //通信失敗の場合
       alert('通信に失敗しました。');
     });
   });
